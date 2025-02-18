@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+
+:root{
+    --peach : #FFE6E6;
+    --teks : #3a2f7a;
+    --pink : #E1AFD1;
+    --ungu-muda : #AD88C6;
+    --header : #AA60C8;
+    --gradasi : linear-gradient(135deg, #E1AFD1 30%, #FFE6E6 70%);
+}
+
+body{
+    background: var(--gradasi);
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    color: var(--peach);
+    background-color: var(--header);
+}
+
+.navbar {
+    position: sticky;
+    display: block;
+    flex-wrap: wrap;
+    width: 100%;
+    top: 0;
+    height: 40px;
+    background-color: var(--peach);
+    border-radius: 2px;
+    padding: 2px;
+}
+.navbar > li{
+    float: left;
+    display: inline;
+    margin: 0 10px;
+}
+.navbar > li > a{
+    color: var(--teks);
+    display: block;
+    text-align: center;
+    padding: 8px;
+    width: 90px;
+    text-decoration: none;
+}
+.navbar > li > a:hover{
+    background-color: var(--ungu-muda);
+    color: var(--peach);
+}
+
+.profil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+.profil img{
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 2px solid var(--teks);
+    transition: transform 0.4s ease-in-out;
+    margin: 20px auto 15px;
+    display: block;
+    }
+.profil img:hover{
+    transform: scale(2);
+    margin: 10px auto;
+    
+    background-color: #3a2f7a3e;
+    
+}
+
+.foto-container{
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 50px;
+}
+
+.foto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.flex_item {
+    margin:5px;
+    width: 200px;
+    height: fit-content;
+    padding: 5px;
+    border: 2px solid var(--ungu-muda) ;
+    background-color: var(--ungu-muda);
+    border-radius: 3px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+
+}
+
+.flex_item:hover{
+    transform: scale(1.02);
+}
+
+.foto-container img{
+    width: 100%;
+    border: 2px solid rgb(85, 43, 80);
+}
+
+.puisi-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 100px auto;
+    min-height: 70vh;
+    gap: 10px;
+    padding: 20px;
+    background-color: #E1AFD1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    border-radius: 5px;
+}
+
+.puisi-container p {
+    padding: 5px;
+}
